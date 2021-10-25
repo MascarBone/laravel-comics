@@ -22,7 +22,7 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    return view('comics',['cards' => config('comics')]);
 })->name('comics');
 
 Route::get('/movies', function () {

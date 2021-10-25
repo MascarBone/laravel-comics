@@ -9,5 +9,11 @@
 </head>
 <body>
     @include('layouts.header', ['links' => config('header_links')])
+
+    <main>
+        @include('layouts.jumbotron')
+
+        @yield('content')
+    </main>
 </body>
 </html>
