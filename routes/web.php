@@ -31,8 +31,11 @@ Route::get('/comics', function () {
 })->name('comics');
 
 Route::get('/comics/show{num}', function ($id) {
-    $comics = config('comics');
-    return view('comics.show',['comic' => $comics[$id]]);
+    // $comics = config('comics');
+    // return view('comics.show',['comic' => $comics[$id]);
+    
+    return view('comics.show',['comic' => config("comics.$id")]);
+    
 })->name('comics.show');
 
 Route::get('/movies', function () {
