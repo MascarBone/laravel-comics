@@ -1,17 +1,23 @@
 @extends('layouts.main')
 
 @section('content')
-@dump($comic)
+
+    <div class="wrapper">
+        <div class="row">
+            <div class="art">
+                <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper">
         <div class="row">
             <div class="description">
                 <h2>{{$comic['title']}}</h2>
                 <div>
-                    <p>prezzo</p>
+                    <p>{{$comic['price']}}</p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel culpa natus harum quo laborum iure tempore maiores ut iste asperiores nemo necessitatibus porro ex officiis, libero, est neque beatae.
-                </p>
+                <p>{{$comic['description']}}</p>
             </div>
             <div class="adv">
                 <img src="{{asset('images/adv.jpg')}}" alt="">
@@ -27,7 +33,9 @@
                         <h3>Art by:</h3>
                     </div>
                     <div class="text">
-                        <span>tanti artisti</span>
+                        @foreach ($comic['artists'] as $artist)
+                            <span>{{$artist}}, </span>
+                        @endforeach
                     </div>
                 </div>
                 <div class="content">
@@ -35,7 +43,9 @@
                         <h3>written by:</h3>
                     </div>
                     <div class="text">
-                        <span>tanti artisti</span>
+                        @foreach ($comic['writers'] as $writer)
+                            <span>{{$writer}}, </span>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -45,7 +55,7 @@
                         <h3>Series:</h3>
                     </div>
                     <div class="text">
-                        <span>tanti artisti</span>
+                        <span>{{$comic['series']}}</span>
                     </div>
                 </div>
                 <div class="content">
@@ -53,7 +63,7 @@
                         <h3>U.S. Price:</h3>
                     </div>
                     <div class="text">
-                        <span>tanti artisti</span>
+                        <span>{{$comic['price']}}</span>
                     </div>
                 </div>
                 <div class="content">
@@ -61,7 +71,7 @@
                         <h3>On Sale Date:</h3>
                     </div>
                     <div class="text">
-                        <span>tanti artisti</span>
+                        <span>{{$comic['sale_date']}}</span>
                     </div>
                 </div>
             </div>
