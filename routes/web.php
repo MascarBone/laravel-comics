@@ -30,8 +30,9 @@ Route::get('/comics', function () {
     return view('comics.index',['cards' => config('comics')]);
 })->name('comics');
 
-Route::get('/comics/show', function () {
-    return view('comics.show');
+Route::get('/comics/show{num}', function ($id) {
+    $comics = config('comics');
+    return view('comics.show',['comic' => $comics[$id]]);
 })->name('comics.show');
 
 Route::get('/movies', function () {

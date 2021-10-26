@@ -18,6 +18,6 @@
         
     </main>
 
-    @include('partials.footer',['links' => config('dc_comics_links'), 'nome' => 'Simone'])
+    @include('partials.footer',['links' => config('dc_comics_links')])
 </body>
 </html>
