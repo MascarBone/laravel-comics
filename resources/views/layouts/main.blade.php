@@ -8,7 +8,7 @@
     <title>DC Comics</title>
 </head>
 <body>
-    @include('partials.header', ['links' => config('dc_comics_links')])
+    @include('partials.header', ['links' => config('dc_links.list')])
 
     <main>
         @include('partials.jumbotron')
@@ -18,6 +18,6 @@
         
     </main>
 
-    @include('partials.footer',['links' => config('dc_comics_links')])
+    @include('partials.footer',['links' => config('dc_links'), 'shops' => config('dc_shops'), 'infos' => config('dc_infos'), 'sites' => config('dc_sites')])
 </body>
 </html>
