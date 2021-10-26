@@ -1,0 +1,39 @@
+footer {
+  
+    .wrap-top{
+        background-image: url('/images/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer-top {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;        
+        overflow: hidden;
+    }
+    
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-text {
+        width: 50%;
+        padding-bottom: 50px;
+    }
+    .footer-list-wrap {
+        flex-wrap: wrap;
+        height: 300px;
+    }
+    .footer-list-content {
+        width: calc(100% / 4);   
+    }
+    .footer-logo {
+    }
+    .footer-logo img {
+        position: absolute;
+        transform: translateY(-15%);
+
+    }
+}

@@ -13,3 +13,40 @@ h1 {
   width: 100%;
 }
 
+footer .wrap-top {
+  background-image: url("/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .footer-top {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+footer .footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-text {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+footer .footer-list-wrap {
+  flex-wrap: wrap;
+  height: 300px;
+}
+
+footer .footer-list-content {
+  width: 25%;
+}
+
+footer .footer-logo img {
+  position: absolute;
+  transform: translateY(-15%);
+}
+
