@@ -21,9 +21,18 @@ Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
+// Route::prefix('comics')->group(function () {
+//     Route::get('/comics', function () {
+//         return view('comics.index',['cards' => config('comics')]);
+// })->name('comics');
+
 Route::get('/comics', function () {
-    return view('comics',['cards' => config('comics')]);
+    return view('comics.index',['cards' => config('comics')]);
 })->name('comics');
+
+Route::get('/comics/show', function () {
+    return view('comics.show');
+})->name('comics.show');
 
 Route::get('/movies', function () {
     return view('movies');

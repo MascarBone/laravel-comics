@@ -1,7 +1,7 @@
-@extends('home')
+@extends('layouts.main')
 
-<div class="cards">    
-    @section('content')
+@section('content')
+    <div class="cards">
         @foreach ($cards as $card)
             <div class="card">
                 <div class="card_image">
@@ -11,6 +11,6 @@
                     <h3>{{$card['series']}}</h3>
                 </div>
             </div>
-        @endforeach
-    @endsection
-</div>
+        @endforeach    
+    </div>
+@endsection 
