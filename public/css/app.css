@@ -4,13 +4,50 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: blue;
-  font-size: 200px;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.linked {
+  color: #0062ff;
 }
 
 .jumbotron-top img {
   width: 100%;
+}
+
+header .wrap-top {
+  height: 50px;
+  background-color: #0282f9;
+}
+
+header .wrap-bot .container {
+  display: flex;
+  align-items: center;
+}
+
+header .wrap-bot .container ul {
+  display: flex;
+}
+
+header .wrap-bot .container ul li {
+  margin: 0 10px;
+}
+
+header .wrap-bot .container ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 footer .wrap-top {
@@ -22,13 +59,25 @@ footer .wrap-top {
 footer .footer-top {
   width: 1200px;
   margin: 0 auto;
+  padding-top: 0;
   display: flex;
+  position: relative;
   overflow: hidden;
 }
 
 footer .footer-list {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+}
+
+footer .footer-list h2 {
+  text-transform: uppercase;
+  color: white;
+}
+
+footer .footer-list a {
+  color: #8a8686;
 }
 
 footer .footer-text {
@@ -36,9 +85,14 @@ footer .footer-text {
   padding-bottom: 50px;
 }
 
+footer .footer-text p {
+  color: #8a8686;
+}
+
 footer .footer-list-wrap {
   flex-wrap: wrap;
-  height: 300px;
+  height: 320px;
+  margin-bottom: 15px;
 }
 
 footer .footer-list-content {
@@ -48,5 +102,63 @@ footer .footer-list-content {
 footer .footer-logo img {
   position: absolute;
   transform: translateY(-15%);
+}
+
+footer .wrap-bot {
+  background-color: #303030;
+}
+
+footer .wrap-bot .footer-bot {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+footer .wrap-bot .footer-bot .footer-icons-title {
+  text-transform: uppercase;
+  color: white;
+}
+
+footer .wrap-bot .footer-bot .footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+footer .wrap-bot .footer-bot .footer-icons .footer-icon {
+  margin: 0 10px;
+}
+
+footer .footer-btn button {
+  background-color: transparent;
+  border: 2px solid #0062ff;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.cards .card-wrap {
+  width: 16.6666666667%;
+  padding: 10px;
+}
+
+.cards .card_image img {
+  width: 100%;
+}
+
+.jumbotron-top {
+  height: 40vh;
+  overflow: hidden;
+  background-image: url("/images/jumbotron.jpg");
+  background-size: cover;
 }
 

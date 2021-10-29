@@ -21,22 +21,27 @@ Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
-// Route::prefix('comics')->group(function () {
-//     Route::get('/comics', function () {
-//         return view('comics.index',['cards' => config('comics')]);
+Route::prefix('comics')->group(function () {
+    Route::get('/', function () {
+        return view('comics.index',['cards' => config('comics')]);
+    })->name('comics');
+    Route::get('/{num}', function ($id) {
+        
+        return view('comics.show',['comic' => config("comics.$id")]);        
+    })->name('comics.show');
+});
+
+// Route::get('/comics', function () {
+//     return view('comics.index',['cards' => config('comics')]);
 // })->name('comics');
 
-Route::get('/comics', function () {
-    return view('comics.index',['cards' => config('comics')]);
-})->name('comics');
-
-Route::get('/comics/show{num}', function ($id) {
-    // $comics = config('comics');
-    // return view('comics.show',['comic' => $comics[$id]);
+// Route::get('/comics/{num}', function ($id) {
+//     // $comics = config('comics');
+//     // return view('comics.show',['comic' => $comics[$id]);
     
-    return view('comics.show',['comic' => config("comics.$id")]);
+//     return view('comics.show',['comic' => config("comics.$id")]);
     
-})->name('comics.show');
+// })->name('comics.show');
 
 Route::get('/movies', function () {
     return view('movies');

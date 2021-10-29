@@ -43,7 +43,7 @@
                         
                 </div>
 
-                <p>All site Content TM and &Coproduct; 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved. <a href="#">Cookies Settings</a></p>
+                <p>All site Content TM and &Coproduct; 2020 DC Entertainment, unless otherwise <a class="linked" href="#">noted here</a>. All rights reserved. <a class="linked" href="#">Cookies Settings</a></p>
                         
             </div>
 
@@ -52,29 +52,32 @@
             </div>
         </div>
     </div>
-    <div class="footer-wrap-bot">
-        <div class="footer-btn">
-            <button type="button">sign-up now!</button>
-        </div>
-        <div class="footer-icons">
-            <div class="footer-icons-title">
-                <h3>follow us</h3>
+    <div class="wrap-bot">
+        <div class="footer-bot">
+            <div class="footer-btn">
+                <button type="button">sign-up now!</button>
             </div>
-            <div class="footer-icon">
-                <img src="{{asset('images\footer-facebook.png')}}" alt="facebook icon">
-            </div>
-            <div class="footer-icon">
-                <img src="{{asset('images\footer-twitter.png')}}" alt="twitter icon">
-            </div>
-            <div class="footer-icon">
-                <img src="{{asset('images\footer-youtube.png')}}" alt="youtube icon">
-            </div>
-            <div class="footer-icon">
-                <img src="{{asset('images\footer-pinterest.png')}}" alt="pinterest icon">
-            </div>
-            <div class="footer-icon">
-                <img src="{{asset('images\footer-periscope.png')}}" alt="periscope icon">
+            <div class="footer-icons">
+                <div class="footer-icons-title">
+                    <h3>follow us</h3>
+                </div>
+                <div class="footer-icon">
+                    <img src="{{asset('images\footer-facebook.png')}}" alt="facebook icon">
+                </div>
+                <div class="footer-icon">
+                    <img src="{{asset('images\footer-twitter.png')}}" alt="twitter icon">
+                </div>
+                <div class="footer-icon">
+                    <img src="{{asset('images\footer-youtube.png')}}" alt="youtube icon">
+                </div>
+                <div class="footer-icon">
+                    <img src="{{asset('images\footer-pinterest.png')}}" alt="pinterest icon">
+                </div>
+                <div class="footer-icon">
+                    <img src="{{asset('images\footer-periscope.png')}}" alt="periscope icon">
+                </div>
             </div>
         </div>
     </div>
+
 </footer>
