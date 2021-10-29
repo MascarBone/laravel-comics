@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Lato";
+}
+
 ul {
   list-style: none;
 }
@@ -26,9 +30,31 @@ a {
   width: 100%;
 }
 
+header {
+  font-size: 1.1rem;
+}
+
+header a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 header .wrap-top {
-  height: 50px;
   background-color: #0282f9;
+}
+
+header .wrap-top .container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+header .wrap-top .container div {
+  margin-left: 20px;
+}
+
+header .wrap-top .container div a {
+  color: white;
 }
 
 header .wrap-bot .container {
@@ -44,10 +70,18 @@ header .wrap-bot .container ul li {
   margin: 0 10px;
 }
 
-header .wrap-bot .container ul li a {
-  text-transform: uppercase;
+header .wrap-bot .searchbar {
+  display: flex;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #0062ff;
+}
+
+header .wrap-bot input {
+  border: none;
+  text-align: right;
   font-weight: bold;
-  font-size: 1.3rem;
+  width: 100px;
+  margin-right: 10px;
 }
 
 footer .wrap-top {
