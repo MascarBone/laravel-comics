@@ -189,6 +189,75 @@ footer .footer-btn button {
   width: 100%;
 }
 
+.row {
+  display: flex;
+  padding: 40px 0;
+}
+
+.wrapper-art {
+  background-color: #0282f9;
+}
+
+.wrapper-art .art {
+  height: 80px;
+  position: relative;
+}
+
+.wrapper-art .art img {
+  position: absolute;
+  bottom: 25%;
+}
+
+.description {
+  width: 75%;
+}
+
+.description > * {
+  margin-bottom: 10px;
+}
+
+.adv {
+  width: 25%;
+}
+
+.adv img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  padding: 20px 0;
+}
+
+.content .title {
+  width: 30%;
+}
+
+.content .text {
+  width: 70%;
+}
+
+.side {
+  width: 50%;
+}
+
+.side h2 {
+  padding-bottom: 20px;
+}
+
+.side-talent {
+  padding-right: 15px;
+}
+
+.side-specs {
+  padding-left: 15px;
+}
+
+.border-bot {
+  border-bottom: 1px solid #303030;
+  padding-bottom: 10px;
+}
+
 .jumbotron-top {
   height: 40vh;
   overflow: hidden;

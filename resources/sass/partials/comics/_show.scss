@@ -1,0 +1,63 @@
+.row {
+    display: flex;
+    padding: 40px 0;
+}
+
+.wrapper-art {
+    background-color: $color-blue-bg;
+    
+    .art {
+        height: 80px;
+        position: relative;
+        
+        img {
+            position: absolute;
+            bottom: 25%;
+        }
+    }
+}
+
+.description {
+    width: 75%;
+    > * {
+        margin-bottom: 10px;
+
+    }
+}
+.adv {
+    width: 25%;
+    img {
+        width: 100%;
+    }
+}
+
+.content {
+    display: flex;
+    padding: 20px 0;
+    
+    .title {
+        width: 30%;
+    }
+    .text {
+        width: 70%;
+    }
+}
+
+.side {
+    width: 50%;
+    h2 {
+        padding-bottom: 20px;
+    }
+}
+.side-talent {
+    padding-right: 15px;
+}
+.side-specs {
+    padding-left: 15px;
+}
+
+.border-bot {    
+    border-bottom: 1px solid $color-dark-grey;
+    padding-bottom: 10px;
+}
+

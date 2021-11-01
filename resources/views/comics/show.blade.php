@@ -2,15 +2,13 @@
 
 @section('content')
 
-    <div class="wrapper">
-        <div class="row">
-            <div class="art">
-                <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
-            </div>
+    <div class="wrapper-art">
+        <div class="container art">
+            <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
         </div>
     </div>
 
-    <div class="wrapper">
+    <div class="container">
         <div class="row">
             <div class="description">
                 <h2>{{$comic['title']}}</h2>
@@ -25,10 +23,11 @@
         </div>
     </div>
 
-    <div class="wrapper">
+    <div class="container">
         <div class="row">
             <div class="side side-talent">
-                <div class="content">
+                <h2 class="border-bot">Talent</h2>
+                <div class="content border-bot">
                     <div class="title">
                         <h3>Art by:</h3>
                     </div>
@@ -38,9 +37,9 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="content">
+                <div class="content border-bot">
                     <div class="title">
-                        <h3>written by:</h3>
+                        <h3>Written by:</h3>
                     </div>
                     <div class="text">
                         @foreach ($comic['writers'] as $writer)
@@ -50,7 +49,8 @@
                 </div>
             </div>
             <div class="side side-specs">
-                <div class="content">
+                <h2 class="border-bot">Specs</h2>
+                <div class="content border-bot">
                     <div class="title">
                         <h3>Series:</h3>
                     </div>
@@ -58,7 +58,7 @@
                         <span>{{$comic['series']}}</span>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content border-bot">
                     <div class="title">
                         <h3>U.S. Price:</h3>
                     </div>
@@ -66,7 +66,7 @@
                         <span>{{$comic['price']}}</span>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content border-bot">
                     <div class="title">
                         <h3>On Sale Date:</h3>
                     </div>
