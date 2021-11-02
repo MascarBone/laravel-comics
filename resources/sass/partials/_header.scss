@@ -2,6 +2,10 @@ header {
    
     font-size: 1.1rem;
 
+    .container {
+        display: flex;
+        padding: 10px 0;
+    }
     a {
         text-transform: uppercase;
         font-weight: bold;
@@ -10,9 +14,7 @@ header {
         background-color: $color-blue-bg;
         
         .container {
-            display: flex;
             justify-content: flex-end;
-            padding: 10px 0;
             
             div {
                 margin-left: 20px;
@@ -26,7 +28,6 @@ header {
     .wrap-bot {
         
         .container {
-            display: flex;
             align-items: center;
 
             ul {

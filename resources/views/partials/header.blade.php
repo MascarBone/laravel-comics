@@ -6,13 +6,13 @@
             </div>
 
             <div>
-                <a href="#">additional dc sites &triangledown;</a>
+                <a href="#">additional dc sites <i class="fas fa-caret-down"></i></a>
             </div>
         </div>
     </div>
     <div class="wrap-bot">
         <div class="container">
-            <div>
+            <div class="header-logo">
                 <a href="{{route('home')}}"><img src="{{asset('images/dc-logo.png')}}" alt="dc logo image"></a>
             </div>
         
@@ -24,7 +24,7 @@
             </ul>
 
             <div>
-                <a href="#">shop &triangledown;</a>
+                <a href="#">shop <i class="fas fa-caret-down"></i></a>
             </div>
 
             <div class="searchbar">
