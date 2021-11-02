@@ -1,8 +1,6 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
-    margin: 0 auto;
 
     .card-wrap {
         width: calc(100% / 6);
@@ -11,5 +9,27 @@
 
     .card_image img {
         width: 100%;
+    }
+}
+
+.wrapper-bg-blue {
+    background-color: $color-blue-bg;
+    padding: 50px 0;
+
+    .box {
+        display: flex;
+    }
+    .box-item {
+        flex-basis: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        
+        img {
+            width: 20%;
+            
+            margin-right: 10px;
+        }
     }
 }
