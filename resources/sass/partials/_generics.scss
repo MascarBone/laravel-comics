@@ -25,3 +25,14 @@ a {
 .linked {
     color: $color-blue-linked;
 }
+
+.upper-case {
+    text-transform: uppercase;
+}
+.text-transparent {
+    color: rgba( $white, 0.5);
+}
+
+.bg-grey {
+    background-color: $color-grey-bg;
+}

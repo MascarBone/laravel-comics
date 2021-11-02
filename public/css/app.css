@@ -26,6 +26,18 @@ a {
   color: #0062ff;
 }
 
+.upper-case {
+  text-transform: uppercase;
+}
+
+.text-transparent {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
 .jumbotron-top img {
   width: 100%;
 }
@@ -111,7 +123,7 @@ footer .footer-list h2 {
 }
 
 footer .footer-list a {
-  color: #8a8686;
+  color: #978f8f;
 }
 
 footer .footer-text {
@@ -120,7 +132,7 @@ footer .footer-text {
 }
 
 footer .footer-text p {
-  color: #8a8686;
+  color: #978f8f;
 }
 
 footer .footer-list-wrap {
@@ -201,15 +213,56 @@ footer .footer-btn button {
 .wrapper-art .art {
   height: 80px;
   position: relative;
+  color: white;
 }
 
-.wrapper-art .art img {
+.wrapper-art .art .art-img {
   position: absolute;
+  z-index: 1;
   bottom: 25%;
+  border: 1px solid white;
+}
+
+.wrapper-art .art .art-comic,
+.wrapper-art .art .art-gallery {
+  position: absolute;
+  z-index: 9;
+  background-color: #0282f9;
+  padding: 3px;
+}
+
+.wrapper-art .art .art-comic {
+  top: 0;
+  left: 0;
+}
+
+.wrapper-art .art .art-gallery {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.available {
+  display: flex;
+  color: white;
+  background-color: #55ba59;
+}
+
+.available .available-text {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  border-right: 1px solid black;
+}
+
+.available .available-text,
+.available .available-btn {
+  padding: 10px;
 }
 
 .description {
   width: 75%;
+  padding-right: 40px;
 }
 
 .description > * {
@@ -253,9 +306,42 @@ footer .footer-btn button {
   padding-left: 15px;
 }
 
+.border-top {
+  border-top: 1px solid #978f8f;
+}
+
+.border-left {
+  border-left: 1px solid #978f8f;
+}
+
+.border-right {
+  border-right: 1px solid #978f8f;
+}
+
 .border-bot {
-  border-bottom: 1px solid #303030;
+  border-bottom: 1px solid #978f8f;
   padding-bottom: 10px;
+}
+
+.buy-comics {
+  display: flex;
+}
+
+.buy-comics h3 {
+  font-size: 0.9rem;
+}
+
+.buy-comics_box {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  padding: 25px;
+  color: #978f8f;
+}
+
+.buy-comics_box img {
+  filter: invert(30%);
+  width: 15%;
 }
 
 .jumbotron-top {

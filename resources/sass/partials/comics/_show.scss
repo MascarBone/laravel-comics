@@ -9,16 +9,54 @@
     .art {
         height: 80px;
         position: relative;
-        
-        img {
+        color: $white;
+
+        .art-img {
             position: absolute;
+            z-index: 1;
             bottom: 25%;
+            border: 1px solid $white;
         }
+        .art-comic,
+        .art-gallery {
+            position: absolute;
+            z-index: 9;
+            background-color: $color-blue-bg;
+            padding: 3px;
+        }
+        .art-comic {
+            top: 0;
+            left: 0;
+
+        }
+        .art-gallery {
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+
+        }
+    }
+}
+.available {
+    display: flex;
+    color: white;
+    background-color: $color-green-bg;
+
+    .available-text {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        border-right: 1px solid black;
+    }    
+    .available-text,
+    .available-btn {
+        padding: 10px;
     }
 }
 
 .description {
     width: 75%;
+    padding-right: 40px;
     > * {
         margin-bottom: 10px;
 
@@ -55,9 +93,35 @@
 .side-specs {
     padding-left: 15px;
 }
-
+.border-top {    
+    border-top: 1px solid $grey;
+}
+.border-left {    
+    border-left: 1px solid $grey;
+}
+.border-right {    
+    border-right: 1px solid $grey;
+}
 .border-bot {    
-    border-bottom: 1px solid $color-dark-grey;
+    border-bottom: 1px solid $grey;
     padding-bottom: 10px;
 }
 
+.buy-comics {
+    display: flex;
+    h3 {
+        font-size: 0.9rem;
+    }
+}
+.buy-comics_box {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    padding: 25px;
+    color: $grey;
+
+    img {
+        filter: invert(30%);
+        width: 15%;
+    }
+}
